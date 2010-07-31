@@ -38,8 +38,8 @@ highlight TooLongLines ctermbg=red ctermfg=white guibg=#800000
 :au BufWinEnter * let m1=matchadd('TooLongLines', '\%>80v.\+', -1)
 :au BufWinEnter *.html,*.haml,*.markdown,*.mdown,*.textile call matchdelete(m1)
 " Highlight trailing whitespace.
-match Search /\s\+$/
- 
+au BufWinEnter * let twsm=matchadd('Search', '\s\+$')
+
 " Command to remove trailing whitespace.
 command RMTWS :execute '%s/\s\+$//'
 " Command to find all results, matching the current word, in a file, throwing
