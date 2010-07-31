@@ -35,8 +35,7 @@ map <C-S-t> :Tlist<CR>
 
 " Highlight lines longer than 80 cols.
 highlight TooLongLines ctermbg=red ctermfg=white guibg=#800000
-:au BufWinEnter * let m1=matchadd('TooLongLines', '\%>80v.\+', -1)
-:au BufWinEnter *.html,*.haml,*.markdown,*.mdown,*.textile call matchdelete(m1)
+au BufWinEnter *.rb,*.php,*.py let m1=matchadd('TooLongLines', '\%>80v.\+', -1)
 " Highlight trailing whitespace.
 au BufWinEnter * let twsm=matchadd('Search', '\s\+$')
 
