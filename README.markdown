@@ -2,12 +2,15 @@ My vim configuration files; plugins, syntax highlights, etc... Having them on gi
 
 # I'd like to try it, but how?
 
-Clone this repo into your home directory.
+Clone this repo into your home directory and initialise the snippets submodule.
 
     cd ~
     git clone https://RichGuk@github.com/RichGuk/vim-files.git .vim
+    cd ~/.vim
+    git submodule init
+    git submodule update
 
-Then in your ~/.vimrc and ~/.gvimrc add the following lines before any personal setting.
+Then in your ~/.vimrc and ~/.gvimrc add the following lines before any personal setting:
 
 **.vimrc**:
 
