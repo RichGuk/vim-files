@@ -5,7 +5,7 @@ My vim configuration files; plugins, syntax highlights, etc... Having them on gi
 Clone this repo into your home directory and initialise the snippets submodule.
 
     cd ~
-    git clone https://RichGuk@github.com/RichGuk/vim-files.git .vim
+    git clone http://github.com/RichGuk/vim-files.git .vim
     cd ~/.vim
     git submodule init
     git submodule update
