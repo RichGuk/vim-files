@@ -1,5 +1,10 @@
 set nocompatible
 
+syntax on
+colorscheme railscasts
+filetype plugin indent on " Enable plugin and indent file-type configs.
+
+" Bulk of settings.
 set novisualbell
 set noerrorbells
 set hlsearch
@@ -16,17 +21,23 @@ set wrap
 set linebreak
 set textwidth=0
 set wrapmargin=0
-
 " Global indent settings.
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+" List settings, show tab and carriage return.
+set list
+set listchars=tab:➔\ ,eol:↵
 
-syntax on
-colorscheme railscasts
 
-filetype plugin indent on
+" Configure status line display.
+set statusline=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" Syntasic settings.
+let g:syntastic_enable_signs=1
 
 " Key mappings.
 map <C-p> :execute 'NERDTreeToggle ' . getcwd()<CR>
@@ -45,3 +56,10 @@ command RMTWS :execute '%s/\s\+$//'
 " Command to find all results, matching the current word, in a file, throwing
 " the result into a QuickFix list.
 command GREP :execute 'vimgrep /'.expand('<cword>').'/gj '.expand('%') | copen
+
+" Highlight overrides.
+hi CursorColumn term=underline cterm=underline guibg=#333435
+" hidden carriage return character
+hi NonText ctermfg=1 guifg=#757575 gui=NONE
+" hidden tab character
+hi SpecialKey ctermfg=1 guifg=#757575 gui=NONE
