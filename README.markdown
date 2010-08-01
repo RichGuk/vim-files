@@ -1,4 +1,4 @@
-My vim configuration files; plugins, syntax highlights, etc... Having them on github make it easier for me to install on new machines, or keep update between my machines.
+My vim configuration files; plugins, syntax highlights, etc... Having them on github make it easier for me to install on new machines, or keep update-to-date between my machines.
 
 # I'd like to try it, but how?
 
