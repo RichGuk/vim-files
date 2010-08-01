@@ -1,7 +1,8 @@
+set nocompatible
+
 set novisualbell
 set noerrorbells
 set hlsearch
-set nocompatible
 set showmatch
 set cursorline
 set cursorcolumn

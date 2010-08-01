@@ -1,1 +1,1 @@
-set nocursorcolumn
+setlocal nocursorcolumn
