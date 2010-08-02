@@ -36,6 +36,15 @@ set statusline=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+" Enable autocomplete for the languages I tend to work with.
+au FileType python set omnifunc=pythoncomplete#Complete
+au FileType ruby,eruby set omnifunc=rubycomplete#Complete
+au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+au FileType html set omnifunc=htmlcomplete#CompleteTags
+au FileType css set omnifunc=csscomplete#CompleteCSS
+au FileType xml set omnifunc=xmlcomplete#CompleteTags
+au FileType php set omnifunc=phpcomplete#CompletePHP
+
 " Syntasic settings.
 let g:syntastic_enable_signs=1
 
