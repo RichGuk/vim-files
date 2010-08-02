@@ -30,7 +30,6 @@ set expandtab
 set list
 set listchars=tab:➔\ ,eol:↵
 
-
 " Configure status line display.
 set statusline=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
