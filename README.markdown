@@ -5,6 +5,7 @@ I run this on Vim 7.2 (and above), so unsure if it will work with older Vim vers
 It includes more up-to-date version of the bundled stuff for:
 
 * [vim-ruby](http://github.com/vim-ruby/vim-ruby)
+* [vim-git](http://github.com/tpope/vim-git)
 
 ### I'd like to try it, but how?
 
