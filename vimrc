@@ -5,6 +5,7 @@ filetype plugin indent on " Enable plugin and indent file-type configs.
 syntax on
 
 " Bulk of settings.
+set backspace=indent,eol,start " Backspace rules all!
 set novisualbell
 set noerrorbells
 set hlsearch
@@ -14,24 +15,50 @@ set cursorcolumn
 set ruler
 set number
 set spell
+
+" Wildmenu settings.
+set wildmode=list:longest
 set wildmenu
+
+" History settings.
 set history=1000
+
 " Wrapping settings.
 set wrap
 set linebreak
-set textwidth=0
-set wrapmargin=0
+
+" Fold settings.
+set foldmethod=indent
+set foldnestmax=3
+set nofoldenable " Don't fold by default.
+
 " Global indent settings.
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set autoindent
+
 " List settings, show tab and carriage return.
 set list
 set listchars=tab:➔\ ,eol:↵
 
 " Configure status line display.
-set statusline=%#warningmsg#
+set statusline=%f
+" Show fileformat.
+set statusline+=(%{&ff})
+set statusline+=%y " Filetype.
+set statusline+=%r " Read only.
+set statusline+=%m " Modified.
+" Line information.
+set statusline+=%c,
+set statusline+=%l/%L
+set statusline+=\ %P
+" Always show the status line.
+set laststatus=2
+
+" Syntastic statusline stuff.
+set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
@@ -48,16 +75,39 @@ au FileType php set omnifunc=phpcomplete#CompletePHP
 let g:syntastic_enable_signs=1
 
 " Key mappings.
-map <C-p> :execute 'NERDTreeToggle ' . getcwd()<CR>
-map <D-R> :NERDTreeFind<CR>
-map ,i :set list!<CR>
-map <C-S-t> :Tlist<CR>
+nmap <silent> <C-p> :execute 'NERDTreeToggle ' . getcwd()<CR>
+nmap <silent> <D-R> :NERDTreeFind<CR>
+nmap ,i :set list!<CR>
+nmap <C-S-t> :Tlist<CR>
+" Clear searches.
+nnoremap <C-L> :nohls<CR><C-L>
+inoremap <C-L> <C-O>:nohls<CR>
 
 " Highlight lines longer than 80 cols.
 highlight TooLongLines ctermbg=red ctermfg=white guibg=#800000
-au BufWinEnter *.rb,*.php,*.py let m1=matchadd('TooLongLines', '\%>80v.\+', -1)
+au BufWinEnter *.rb,*.php,*.py let w:m1=matchadd('TooLongLines', '\%>80v.\+', -1)
+" Setup a toggle.
+nnoremap <silent> <Leader>l
+  \ :if exists('w:m1') <Bar>
+  \   silent! call matchdelete(w:m1) <Bar>
+  \   unlet w:m1 <Bar>
+  \ elseif &textwidth > 0 <Bar>
+  \   let w:m1 = matchadd('TooLongLines', '\%>'.&tw.'v.\+', -1) <Bar>
+  \ else <Bar>
+  \   let w:m1 = matchadd('TooLongLines', '\%>80v.\+', -1) <Bar>
+  \ endif<CR>
+
 " Highlight trailing whitespace.
-au BufWinEnter * let twsm=matchadd('Search', '\s\+$')
+hi link TrailingWhiteSpace Search
+au BufWinEnter * let w:twsm=matchadd('TrailingWhiteSpace', '\s\+$')
+" Setup a toggle.
+nnoremap <silent> <Leader>w
+  \ :if exists('w:twsm') <Bar>
+  \   silent! call matchdelete(w:twsm) <Bar>
+  \   unlet w:twsm <Bar>
+  \ else <Bar>
+  \   let w:twsm = matchadd('TrailingWhiteSpace', '\s\+$') <Bar>
+  \ endif<CR>
 
 " Command to remove trailing whitespace.
 command RMTWS :execute '%s/\s\+$//'
