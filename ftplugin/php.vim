@@ -1,4 +1,2 @@
-setlocal tabstop=4
-setlocal shiftwidth=4
-setlocal softtabstop=4
-setlocal noexpandtab
+let g:php_sql_query=1
+let g:php_htmlInStrings=1
