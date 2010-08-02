@@ -1,8 +1,8 @@
 set nocompatible
 
-syntax on
 colorscheme railscasts
 filetype plugin indent on " Enable plugin and indent file-type configs.
+syntax on
 
 " Bulk of settings.
 set novisualbell
