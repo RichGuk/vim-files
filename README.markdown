@@ -8,6 +8,7 @@ It includes more up-to-date version of:
 * [vim-git](http://github.com/tpope/vim-git)
 * [vim-haml](http://github.com/tpope/vim-haml)
 * [vim-markdown](http://github.com/tpope/vim-haml)
+* [delimitMate](http://github.com/Raimondi/delimitMate)
 
 ### I'd like to try it, but how?
 
