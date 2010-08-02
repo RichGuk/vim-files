@@ -2,11 +2,12 @@ These are my configuration files for Vim. I've placed them on Github so that I c
 
 I run this on Vim 7.2 (and above), so unsure if it will work with older Vim versions!
 
-It includes more up-to-date version of the bundled stuff for:
+It includes more up-to-date version of:
 
 * [vim-ruby](http://github.com/vim-ruby/vim-ruby)
 * [vim-git](http://github.com/tpope/vim-git)
 * [vim-haml](http://github.com/tpope/vim-haml)
+* [vim-markdown](http://github.com/tpope/vim-haml)
 
 ### I'd like to try it, but how?
 
