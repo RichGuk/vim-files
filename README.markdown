@@ -1,6 +1,12 @@
-My vim configuration files; plugins, syntax highlights, etc... Having them on github make it easier for me to install on new machines, or keep update-to-date between my machines.
+These are my configuration files for Vim. I've placed them on Github so that I can keep all my machines up-to-date, however it's always good to share.
 
-# I'd like to try it, but how?
+I run this on Vim 7.2 (and above), so unsure if it will work with older Vim versions!
+
+It includes more up-to-date version of the bundled stuff for:
+
+* [vim-ruby](http://github.com/vim-ruby/vim-ruby)
+
+### I'd like to try it, but how?
 
 Clone this repo into your home directory and initialise the snippets submodule.
 
@@ -10,7 +16,7 @@ Clone this repo into your home directory and initialise the snippets submodule.
     git submodule init
     git submodule update
 
-Then in your ~/.vimrc and ~/.gvimrc add the following lines before any personal setting:
+Then in your ~/.vimrc and ~/.gvimrc add the following lines before any personal settings:
 
 **.vimrc**:
 
