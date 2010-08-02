@@ -6,6 +6,7 @@ It includes more up-to-date version of the bundled stuff for:
 
 * [vim-ruby](http://github.com/vim-ruby/vim-ruby)
 * [vim-git](http://github.com/tpope/vim-git)
+* [vim-haml](http://github.com/tpope/vim-haml)
 
 ### I'd like to try it, but how?
 
