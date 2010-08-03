@@ -10,8 +10,12 @@ set novisualbell
 set noerrorbells
 set hlsearch
 set showmatch
+
+" Cursor options.
 set cursorline
 set cursorcolumn
+au FileType diff setlocal nocursorcolumn
+
 set ruler
 set number
 set spell
@@ -32,12 +36,10 @@ set foldmethod=indent
 set foldnestmax=3
 set nofoldenable " Don't fold by default.
 
-" Global indent settings.
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set autoindent
+" Indent settings.
+set ts=2 sts=2 sw=2 expandtab autoindent
+au FileType php setlocal ts=4 sts=4 sw=4 noexpandtab
+au FileType python setlocal ts=4 sts=4 sw=4 expandtab
 
 " List settings, show tab and carriage return.
 set list
