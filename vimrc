@@ -112,7 +112,7 @@ nnoremap <silent> <Leader>w
   \ endif<CR>
 
 " Command to remove trailing whitespace.
-command RMTWS :execute '%s/\s\+$//'
+command RMTWS :execute '%s/\s\+$//e'
 " Command to find all results, matching the current word, in a file, throwing
 " the result into a QuickFix list.
 command GREP :execute 'vimgrep /'.expand('<cword>').'/gj '.expand('%') | copen
