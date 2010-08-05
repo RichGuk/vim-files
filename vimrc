@@ -37,7 +37,12 @@ set foldnestmax=3
 set nofoldenable " Don't fold by default.
 
 " Indent settings.
-set ts=2 sts=2 sw=2 expandtab autoindent
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set autoindent
+
 au FileType php setlocal ts=4 sts=4 sw=4 noexpandtab
 au FileType python setlocal ts=4 sts=4 sw=4 expandtab
 
@@ -108,7 +113,7 @@ nnoremap <silent> <Leader>w
   \   silent! call matchdelete(w:twsm) <Bar>
   \   unlet w:twsm <Bar>
   \ else <Bar>
-  \   let w:twsm = matchadd('TrailingWhiteSpace', '\s\+$') <Bar>
+  \   let w:twsm = matchadd('TrailingWhiteSace', '\s\+$') <Bar>
   \ endif<CR>
 
 " Command to remove trailing whitespace.
