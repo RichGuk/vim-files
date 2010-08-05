@@ -11,14 +11,11 @@ set noerrorbells
 set hlsearch
 set showmatch
 
-" Cursor options.
-set cursorline
-set cursorcolumn
-au FileType diff setlocal nocursorcolumn
-
 set ruler
 set number
 set spell
+" Disable spell checking for SQL, becomes a little distracting.
+au FileType sql,mysql,plsql setlocal nospell
 
 " Wildmenu settings.
 set wildmode=list:longest
