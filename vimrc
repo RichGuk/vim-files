@@ -40,7 +40,7 @@ au FileType python setlocal ts=4 sts=4 sw=4 expandtab
 
 " List settings, show tab and carriage return.
 set list
-set listchars=tab:➔\ ,eol:↵
+set listchars=tab:▸\ ,eol:¬
 
 " Configure status line display.
 set statusline=%f
@@ -117,6 +117,6 @@ command GREP :execute 'vimgrep /'.expand('<cword>').'/gj '.expand('%') | copen
 " Highlight overrides.
 hi CursorColumn term=underline cterm=underline guibg=#333435
 " hidden carriage return character
-hi NonText ctermfg=1 guifg=#5C5C5C gui=NONE
+hi NonText ctermfg=1 guifg=#424242 gui=NONE
 " hidden tab character
-hi SpecialKey ctermfg=1 guifg=#5C5C5C gui=NONE
+hi SpecialKey ctermfg=1 guifg=#424242 gui=NONE
