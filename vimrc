@@ -108,6 +108,9 @@ nnoremap <silent> <Leader>w
   \   let w:twsm = matchadd('TrailingWhiteSpace', '\s\+$') <Bar>
   \ endif<CR>
 
+" Map PHPDoc call.
+nnoremap <Leader>cd :call PhpDocSingle()<CR>
+
 " Command to remove trailing whitespace.
 command RMTWS :execute '%s/\s\+$//e'
 " Command to find all results, matching the current word, in a file, throwing
