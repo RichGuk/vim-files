@@ -8,6 +8,8 @@ syntax on
 set backspace=indent,eol,start " Backspace rules all!
 set novisualbell
 set noerrorbells
+
+set incsearch
 set hlsearch
 set showmatch
 
@@ -29,7 +31,7 @@ set wrap
 set linebreak
 
 " Fold settings.
-set foldmethod=indent
+set foldmethod=syntax
 set foldnestmax=3
 set nofoldenable " Don't fold by default.
 
@@ -83,6 +85,12 @@ nmap <silent> <C-p> :execute 'NERDTreeToggle ' . getcwd()<CR>
 nmap <silent> <D-R> :NERDTreeFind<CR>
 nmap ,i :set list!<CR>
 nmap <C-S-t> :Tlist<CR>
+" Auto complete the current file path.
+map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
 " Clear searches.
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
