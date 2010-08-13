@@ -40,7 +40,7 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-set autoindent
+set smartindent
 
 au FileType php setlocal ts=4 sts=4 sw=4 noexpandtab
 au FileType python setlocal ts=4 sts=4 sw=4 expandtab
@@ -50,23 +50,9 @@ set list
 set listchars=tab:▸\ ,eol:¬
 
 " Configure status line display.
-set statusline=%f
-" Show fileformat.
-set statusline+=(%{&ff})
-set statusline+=%y " Filetype.
-set statusline+=%r " Read only.
-set statusline+=%m " Modified.
-" Line information.
-set statusline+=%c,
-set statusline+=%l/%L
-set statusline+=\ %P
+set statusline=%f\ (%{&ff})\ %y%m%r\ [%c,%l/%L]\ %P\ %#warningmsg#%{SyntasticStatuslineFlag()}%*
 " Always show the status line.
 set laststatus=2
-
-" Syntastic statusline stuff.
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
 " Enable autocomplete for the languages I tend to work with.
 au FileType python set omnifunc=pythoncomplete#Complete
@@ -98,6 +84,7 @@ inoremap <C-L> <C-O>:nohls<CR>
 " Highlight lines longer than 80 cols.
 highlight TooLongLines ctermbg=red ctermfg=white guibg=#800000
 au BufWinEnter *.rb,*.php,*.py let w:m1=matchadd('TooLongLines', '\%>80v.\+', -1)
+
 " Setup a toggle.
 nnoremap <silent> <Leader>l
   \ :if exists('w:m1') <Bar>
