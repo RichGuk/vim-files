@@ -105,7 +105,7 @@ nnoremap <silent> <Leader>w
   \   silent! call matchdelete(w:twsm) <Bar>
   \   unlet w:twsm <Bar>
   \ else <Bar>
-  \   let w:twsm = matchadd('TrailingWhiteSace', '\s\+$') <Bar>
+  \   let w:twsm = matchadd('TrailingWhiteSpace', '\s\+$') <Bar>
   \ endif<CR>
 
 " Map PHPDoc call.
