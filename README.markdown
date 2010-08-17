@@ -1,6 +1,6 @@
 These are my configuration files for Vim. I've placed them on Github so that I can keep all my machines up-to-date, however it's always good to share.
 
-I run this on Vim 7.2 (and above), so unsure if it will work with older Vim versions!
+I run this on Vim 7.3 (and above), should work fine with Vim 7.2 also.
 
 It includes more up-to-date version of:
 

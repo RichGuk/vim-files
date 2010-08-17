@@ -81,20 +81,30 @@ map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
 
-" Highlight lines longer than 80 cols.
-highlight TooLongLines ctermbg=red ctermfg=white guibg=#800000
-au BufWinEnter *.rb,*.php,*.py let w:m1=matchadd('TooLongLines', '\%>80v.\+', -1)
+" Highlight lines longer than 80 cols. For Vim 7.3 use the color column option.
+if version >= 703
+  highlight ColorColumn ctermbg=lightgrey guibg=#464646
+  set cc=+1 tw=80
+  nnoremap <Leader>l
+        \ :if &cc != '0'<Bar>
+        \   set cc=0<Bar>
+        \ else<Bar>
+        \   set cc=+5<Bar>
+        \ endif<CR>
+else
+  highlight TooLongLines ctermbg=red ctermfg=white guibg=#800000
+  au BufWinEnter *.rb,*.php,*.py let w:m1=matchadd('TooLongLines', '\%>80v.\+', -1)
+  nnoremap <silent> <Leader>l
+    \ :if exists('w:m1') <Bar>
+    \   silent! call matchdelete(w:m1) <Bar>
+    \   unlet w:m1 <Bar>
+    \ elseif &textwidth > 0 <Bar>
+    \   let w:m1 = matchadd('TooLongLines', '\%>'.&tw.'v.\+', -1) <Bar>
+    \ else <Bar>
+    \   let w:m1 = matchadd('TooLongLines', '\%>80v.\+', -1) <Bar>
+    \ endif<CR>
 
-" Setup a toggle.
-nnoremap <silent> <Leader>l
-  \ :if exists('w:m1') <Bar>
-  \   silent! call matchdelete(w:m1) <Bar>
-  \   unlet w:m1 <Bar>
-  \ elseif &textwidth > 0 <Bar>
-  \   let w:m1 = matchadd('TooLongLines', '\%>'.&tw.'v.\+', -1) <Bar>
-  \ else <Bar>
-  \   let w:m1 = matchadd('TooLongLines', '\%>80v.\+', -1) <Bar>
-  \ endif<CR>
+endif
 
 " Highlight trailing whitespace.
 hi link TrailingWhiteSpace Search
