@@ -63,6 +63,9 @@ au FileType css set omnifunc=csscomplete#CompleteCSS
 au FileType xml set omnifunc=xmlcomplete#CompleteTags
 au FileType php set omnifunc=phpcomplete#CompletePHP
 
+" Add some extra locations for ctags.
+set tags+=$HOME
+
 " Syntasic settings.
 let g:syntastic_enable_signs=1
 
