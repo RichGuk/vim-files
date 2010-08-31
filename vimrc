@@ -15,9 +15,6 @@ set showmatch
 
 set ruler
 set number
-set spell
-" Disable spell checking for SQL, becomes a little distracting.
-au FileType sql,mysql,plsql setlocal nospell
 
 " Wildmenu settings.
 set wildmode=list:longest
