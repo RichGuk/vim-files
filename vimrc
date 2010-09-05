@@ -1,6 +1,7 @@
 set nocompatible
 
 colorscheme railscasts
+
 filetype plugin indent on " Enable plugin and indent file-type configs.
 syntax on
 
@@ -9,15 +10,12 @@ set backspace=indent,eol,start " Backspace rules all!
 set novisualbell
 set noerrorbells
 
-set incsearch
+"set incsearch
 set hlsearch
 set showmatch
 
 set ruler
 set number
-set spell
-" Disable spell checking for SQL, becomes a little distracting.
-au FileType sql,mysql,plsql setlocal nospell
 
 " Wildmenu settings.
 set wildmode=list:longest
@@ -46,7 +44,6 @@ au FileType php setlocal ts=4 sts=4 sw=4 noexpandtab
 au FileType python setlocal ts=4 sts=4 sw=4 expandtab
 
 " List settings, show tab and carriage return.
-set list
 set listchars=tab:▸\ ,eol:¬
 
 " Configure status line display.
