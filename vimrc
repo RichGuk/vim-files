@@ -39,7 +39,7 @@ set shiftwidth=2
 set expandtab
 set smartindent
 
-au FileType php setlocal ts=4 sts=4 sw=4 noexpandtab
+au FileType php setlocal ts=4 sts=4 sw=4 expandtab
 au FileType python setlocal ts=4 sts=4 sw=4 expandtab
 
 " List settings, show tab and carriage return.
