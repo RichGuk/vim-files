@@ -40,8 +40,8 @@ set shiftwidth=2
 set expandtab
 set smartindent
 
-au FileType php setlocal ts=4 sts=4 sw=4 expandtab
-au FileType python setlocal ts=4 sts=4 sw=4 expandtab
+au FileType php setlocal ts=4 sts=4 sw=4
+au FileType python setlocal ts=4 sts=4 sw=4
 
 " List settings, show tab and carriage return.
 set listchars=tab:▸\ ,eol:¬
@@ -59,6 +59,11 @@ au FileType html set omnifunc=htmlcomplete#CompleteTags
 au FileType css set omnifunc=csscomplete#CompleteCSS
 au FileType xml set omnifunc=xmlcomplete#CompleteTags
 au FileType php set omnifunc=phpcomplete#CompletePHP
+
+" PHP options.
+au FileType php let php_sql_query=1
+au FileType php let php_htmlInStrings=1
+
 
 " Add some extra locations for ctags.
 set tags+=$HOME
