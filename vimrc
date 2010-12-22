@@ -145,6 +145,6 @@ command GREP :execute 'vimgrep /'.expand('<cword>').'/gj '.expand('%') | copen
 " Highlight overrides.
 hi CursorColumn term=underline cterm=underline guibg=#333435
 " hidden carriage return character
-hi NonText ctermbg=NONE ctermfg=244 guifg=#424242 gui=NONE
+hi NonText ctermbg=NONE ctermfg=235 guifg=#424242 gui=NONE
 " hidden tab character
-hi SpecialKey ctermbg=NONE ctermfg=244 guifg=#424242 gui=NONE
+hi SpecialKey ctermbg=NONE ctermfg=235 guifg=#424242 gui=NONE
