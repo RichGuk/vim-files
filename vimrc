@@ -83,7 +83,7 @@ let g:syntastic_enable_signs=1
 
 " Key mappings.
 nmap <silent> <C-p> :execute 'NERDTreeToggle ' . getcwd()<CR>
-nmap <silent> <D-R> :NERDTreeFind<CR>
+nmap <silent> <C-r> :NERDTreeFind<CR>
 nmap ,i :set list!<CR>
 nmap <C-S-t> :Tlist<CR>
 " Auto complete the current file path.
