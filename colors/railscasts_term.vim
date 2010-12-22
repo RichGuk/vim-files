@@ -71,6 +71,11 @@ highlight DiffAdd                   guifg=#E6E1DC ctermfg=7 guibg=#519F50 ctermb
 highlight DiffDelete                guifg=#E6E1DC ctermfg=7 guibg=#660000 ctermbg=52
 highlight Special                   guifg=#DA4939 ctermfg=167 
 
+hi Pmenu                            guifg=#F6F3E8 guibg=#444444 gui=NONE ctermfg=255 ctermbg=235
+hi PmenuSel                         guifg=#000000 guibg=#A5C261 gui=NONE
+hi PMenuSbar                        guibg=#5A647E gui=NONE
+hi PMenuThumb                       guibg=#AAAAAA gui=NONE
+
 highlight pythonBuiltin             guifg=#6D9CBE ctermfg=73 gui=NONE cterm=NONE
 highlight rubyBlockParameter        guifg=#FFFFFF ctermfg=15
 highlight rubyClass                 guifg=#FFFFFF ctermfg=15
