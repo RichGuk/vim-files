@@ -1,12 +1,18 @@
+set nocompatible
+set t_Co=256
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-set nocompatible
-
-colorscheme railscasts
-
 filetype plugin indent on " Enable plugin and indent file-type configs.
 syntax on
+
+if has("gui_running")
+	colorscheme railscasts
+else
+	colorscheme railscasts_term
+endif
+
 
 " Bulk of settings.
 set backspace=indent,eol,start " Backspace rules all!
