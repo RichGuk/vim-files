@@ -1,33 +1,57 @@
-[submodule "bundle/snippets"]
-	path = bundle/snippets
-	url = http://github.com/scrooloose/snipmate-snippets.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/nerd-commenter"]
+	path = bundle/nerd-commenter
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
+[submodule "bundle/nerd-tree"]
+	path = bundle/nerd-tree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
-	url = http://github.com/tpope/vim-fugitive.git
-[submodule "bundle/NERD_commenter"]
-	path = bundle/NERD_commenter
-	url = https://github.com/vim-scripts/The-NERD-Commenter.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/peepopen"]
-	path = bundle/peepopen
-	url = https://github.com/shemerey/vim-peepopen.git
-[submodule "bundle/gist"]
-	path = bundle/gist
-	url = https://github.com/mattn/gist-vim.git
-[submodule "bundle/NERD_tree"]
-	path = bundle/NERD_tree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
+	url = https://github.com/vim-scripts/fugitive.vim.git
+[submodule "bundle/snipMate"]
+	path = bundle/snipMate
+	url = https://github.com/vim-scripts/snipMate.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/surround"]
 	path = bundle/surround
-	url = https://github.com/tpope/vim-surround.git
+	url = https://github.com/vim-scripts/surround.vim.git
+[submodule "bundle/haml"]
+	path = bundle/haml
+	url = https://github.com/vim-scripts/Haml.git
+[submodule "bundle/jslint"]
+	path = bundle/jslint
+	url = https://github.com/vim-scripts/jslint.vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/vim-scripts/Command-T.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/git"]
+	path = bundle/git
+	url = https://github.com/tpope/vim-git.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/vim-scripts/delimitMate.vim.git
 [submodule "bundle/matchit"]
 	path = bundle/matchit
-	url = https://github.com/edsono/vim-matchit.git
-[submodule "bundle/php-doc"]
-	path = bundle/php-doc
-	url = https://github.com/vim-scripts/php-doc.git
+	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "markdown-preview"]
+	path = markdown-preview
+	url = https://github.com/robgleeson/vim-markdown-preview.git
+[submodule "markdown"]
+	path = markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/cucumber"]
+	path = bundle/cucumber
+	url = https://github.com/tpope/vim-cucumber.git
+[submodule "bundle/align"]
+	path = bundle/align
+	url = https://github.com/tsaleh/vim-align.git
