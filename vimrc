@@ -9,6 +9,9 @@ set number
 set ruler
 syntax on
 
+" Spelling!
+set spell
+
 " Tab settings.
 set nowrap
 set tabstop=2
@@ -113,6 +116,18 @@ if version >= 703
         \   set cc=+5<Bar>
         \ endif<CR>
 endif
+
+" Highlight trailing whitespace.
+hi link TrailingWhiteSpace Search
+au BufWinEnter * let w:twsm=matchadd('TrailingWhiteSpace', '\s\+$')
+" Setup a toggle.
+nnoremap <silent> <Leader>w
+            \ :if exists('w:twsm') <Bar>
+            \   silent! call matchdelete(w:twsm) <Bar>
+            \   unlet w:twsm <Bar>
+            \ else <Bar>
+            \   let w:twsm = matchadd('TrailingWhiteSpace', '\s\+$') <Bar>
+            \ endif<CR>
 
 hi CursorColumn term=underline cterm=underline guibg=#333435
 " hidden carriage return character
