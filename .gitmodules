@@ -67,3 +67,6 @@
 [submodule "bundle/phpdocumentor"]
 	path = bundle/phpdocumentor
 	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
+[submodule "bundle/textobj-indent"]
+	path = bundle/textobj-indent
+	url = https://github.com/vim-scripts/textobj-indent.git
