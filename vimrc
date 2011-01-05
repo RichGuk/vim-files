@@ -94,6 +94,9 @@ map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
+" Map PHPDoc call.
+nnoremap <Leader>cd :call PhpDocSingle()<CR>"
+
 " Remove trailing whitespace!
 command RMTWS :execute '%s/\s\+$//e'
 

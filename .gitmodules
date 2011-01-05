@@ -64,3 +64,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/phpdocumentor"]
+	path = bundle/phpdocumentor
+	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
