@@ -40,11 +40,11 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
-[submodule "markdown-preview"]
-	path = markdown-preview
+[submodule "bundle/markdown-preview"]
+	path = bundle/markdown-preview
 	url = https://github.com/robgleeson/vim-markdown-preview.git
-[submodule "markdown"]
-	path = markdown
+[submodule "bundle/markdown"]
+	path = bundle/markdown
 	url = https://github.com/tpope/vim-markdown.git
 [submodule "bundle/rails"]
 	path = bundle/rails
@@ -61,6 +61,9 @@
 [submodule "bundle/textobj-rubyblock"]
 	path = bundle/textobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
