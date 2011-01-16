@@ -38,7 +38,6 @@ set laststatus=2
 
 " Syntax error signs!
 let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=1
 
 " Keep much history.
 set history=1000
