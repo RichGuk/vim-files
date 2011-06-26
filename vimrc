@@ -14,9 +14,9 @@ set spell
 
 " Tab settings.
 set nowrap
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 " Show tabs and new line 'hidden' characters.
 set list listchars=tab:▸\ ,eol:¬
@@ -61,9 +61,9 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
-" Python/PHP have different indent settings.
-au FileType python set tabstop=4 softtabstop=4 shiftwidth=4
-au FileType php set tabstop=4 softtabstop=4 shiftwidth=4
+" Ruby/CSS have 2 space indenting.
+au FileType stylesheet set tabstop=2 softtabstop=2 shiftwidth=2
+au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
 
 " Additional files that should be Ruby!
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru} set ft=ruby
