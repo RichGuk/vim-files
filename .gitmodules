@@ -64,3 +64,9 @@
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/haml"]
+	path = bundle/haml
+	url = https://github.com/tpope/vim-haml.git
+[submodule "bundle/gist"]
+	path = bundle/gist
+	url = https://github.com/vim-scripts/Gist.vim.git
