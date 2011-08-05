@@ -46,6 +46,10 @@ set history=1000
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>N :NERDTreeFind<CR>
 
+" Add some mappings for new tab/close tab
+map ,tc :tabclose<CR>
+map ,tn :tabnew<CR>
+
 " Command-T.
 let g:CommandTMaxHeight=20
 
