@@ -14,9 +14,9 @@ set spell
 
 " Tab settings.
 set nowrap
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 " Show tabs and new line 'hidden' characters.
 set list listchars=tab:▸\ ,eol:¬
@@ -46,6 +46,10 @@ set history=1000
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>N :NERDTreeFind<CR>
 
+" Add some mappings for new tab/close tab
+map ,tc :tabclose<CR>
+map ,tn :tabnew<CR>
+
 " Command-T.
 let g:CommandTMaxHeight=20
 
@@ -61,12 +65,18 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
-" Python/PHP have different indent settings.
-au FileType python set tabstop=4 softtabstop=4 shiftwidth=4
-au FileType php set tabstop=4 softtabstop=4 shiftwidth=4
+" Ruby/CSS have 2 space indenting.
+au FileType stylesheet set tabstop=2 softtabstop=2 shiftwidth=2
+au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
 
 " Additional files that should be Ruby!
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru} set ft=ruby
+
+" Code folding.
+set foldmethod=syntax
+set foldlevel=1
+set foldnestmax=3
+set nofoldenable
 
 " Backspace rules all!
 set backspace=indent,eol,start
