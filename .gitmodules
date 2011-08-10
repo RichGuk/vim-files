@@ -39,7 +39,7 @@
 	url = https://github.com/vim-scripts/matchit.zip.git
 [submodule "bundle/markdown-preview"]
 	path = bundle/markdown-preview
-	url = https://github.com/robgleeson/vim-markdown-preview.git
+	url = https://github.com/greyblake/vim-preview.git
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/tpope/vim-markdown.git
