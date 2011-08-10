@@ -72,6 +72,12 @@ au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
 " Additional files that should be Ruby!
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru} set ft=ruby
 
+" Code folding.
+set foldmethod=syntax
+set foldlevel=1
+set foldnestmax=3
+set nofoldenable
+
 " Backspace rules all!
 set backspace=indent,eol,start
 
