@@ -4,7 +4,6 @@ set nocompatible
 " General settings.
 "
 set history=1000
-set timeoutlen=200
 set clipboard+=unnamed " Yanks into clipboard (trying).
 set spell
 
