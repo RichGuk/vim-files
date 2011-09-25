@@ -122,6 +122,9 @@ map <leader>tc :set invlist<CR>
 set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 
+" Vundle.
+ Bundle "gmarik/vundle"
+
 " NERDTree.
 Bundle "The-NERD-tree"
 noremap <leader>n :NERDTreeToggle<CR>
