@@ -150,3 +150,6 @@ Bundle "ack.vim"
 " Ctrl-P.
 Bundle "ctrlp.vim"
 let g:ctrlp_working_path_mode = 0
+
+" Tabular
+Bundle "Tabular"
