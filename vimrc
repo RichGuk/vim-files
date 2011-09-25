@@ -39,10 +39,11 @@ set wildignore+=*.o,*.obj,.git,*.class
 syntax on
 filetype plugin indent on
 
-
 "
 " Display settings.
 "
+set background=dark
+colorscheme railscasts2
 set laststatus=2 " Always show status bar.
 set number
 set ruler
