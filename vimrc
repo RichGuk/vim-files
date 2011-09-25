@@ -125,3 +125,28 @@ noremap <leader>N :NERDTreeFind<CR>
 
 " Nerd Commenter.
 Bundle "The-NERD-Commenter"
+
+" Fugitive.
+Bundle "fugitive.vim"
+
+" Surround.
+Bundle "surround.vim"
+
+" Most recently used.
+Bundle "mru.vim"
+
+" DelimitMate
+Bundle "delimitMate.vim"
+
+" Supertab.
+Bundle "SuperTab-continued."
+
+" Tagbar.
+Bundle "Tagbar"
+
+" Ack.
+Bundle "ack.vim"
+
+" Ctrl-P.
+Bundle "ctrlp.vim"
+let g:ctrlp_working_path_mode = 0
