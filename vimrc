@@ -122,3 +122,6 @@ call vundle#rc()
 Bundle "The-NERD-tree"
 noremap <leader>n :NERDTreeToggle<CR>
 noremap <leader>N :NERDTreeFind<CR>
+
+" Nerd Commenter.
+Bundle "The-NERD-Commenter"
