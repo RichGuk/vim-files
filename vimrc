@@ -42,7 +42,12 @@ filetype plugin indent on
 " Display settings.
 "
 set background=dark
-colorscheme railscasts2
+if has("gui_running")
+  colorscheme railscasts2
+else
+  colorscheme railscasts_term
+endif
+
 set laststatus=2 " Always show status bar.
 set number
 set ruler
