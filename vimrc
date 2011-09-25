@@ -158,3 +158,7 @@ let g:ctrlp_working_path_mode = 0
 
 " Tabular
 Bundle "Tabular"
+
+" Syntastic
+Bundle "Syntastic"
+let g:syntastic_enable_signs=1
