@@ -115,7 +115,7 @@ map <leader>tc :set invlist<CR>
 "
 " Plugins.
 "
-set runtimepath+=./bundle/vundle
+set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " NERDTree.
