@@ -110,3 +110,15 @@ map <silent> ,>] :tabnext<CR>
 
 " Toggle list characters.
 map <leader>tc :set invlist<CR>
+
+
+"
+" Plugins.
+"
+set runtimepath+=./bundle/vundle
+call vundle#rc()
+
+" NERDTree.
+Bundle "The-NERD-tree"
+noremap <leader>n :NERDTreeToggle<CR>
+noremap <leader>N :NERDTreeFind<CR>
