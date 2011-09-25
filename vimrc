@@ -161,3 +161,6 @@ Bundle "Tabular"
 " Syntastic
 Bundle "Syntastic"
 let g:syntastic_enable_signs=1
+
+" JShint
+Bundle "wookiehangover/jshint.vim"
