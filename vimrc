@@ -12,6 +12,9 @@ set incsearch
 set ignorecase
 set smartcase
 
+" Tags.
+set tags=tags;$HOME
+
 " Remember last location in file.
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -115,6 +118,8 @@ map <silent> ,>] :tabnext<CR>
 " Toggle list characters.
 map <leader>tc :set invlist<CR>
 
+" Refresh ctags.
+map <leader>rt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir \| tail -1`/gems/*<CR><CR>
 
 "
 " Plugins.
