@@ -35,7 +35,7 @@ set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.class
 
 syntax on
-filetype plugin indent on
+filetype off
 
 "
 " Display settings.
@@ -170,3 +170,6 @@ Bundle "wookiehangover/jshint.vim"
 
 " Puppet Syntax Highlighting.
 Bundle "Puppet-Syntax-Highlighting"
+
+" Needs to be at the end for Vundle.
+filetype plugin indent on
