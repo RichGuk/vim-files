@@ -78,7 +78,7 @@ endif
 " Mappings and Commands
 "
 " Remove trailing whitespace with :RMTWS.
-command RMTWS :execute '%s/\s\+$//e'
+command! RMTWS :execute '%s/\s\+$//e'
 
 " Toggle long lines highlight.
 if version >= 703
