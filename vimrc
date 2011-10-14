@@ -176,5 +176,8 @@ Bundle "wookiehangover/jshint.vim"
 " Puppet Syntax Highlighting.
 Bundle "Puppet-Syntax-Highlighting"
 
+" Github Gists.
+Bundle "Gist.vim"
+
 " Needs to be at the end for Vundle.
 filetype plugin indent on
