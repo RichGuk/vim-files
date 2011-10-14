@@ -121,6 +121,9 @@ map <leader>tc :set invlist<CR>
 " Refresh ctags.
 map <leader>rt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir \| tail -1`/gems/*<CR><CR>
 
+" Save with sudo.
+cmap w!! %!sudo tee > /dev/null %
+
 "
 " Plugins.
 "
