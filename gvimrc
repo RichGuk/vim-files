@@ -13,5 +13,5 @@ endif
 " Start without the toolbar
 set guioptions-=T
 
-set guifont=Meslo\ LG\ M\ DZ:h11
+set guifont=Meslo\ LG\ M\ DZ:h12
 set vb
