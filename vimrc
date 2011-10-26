@@ -31,6 +31,10 @@ set shiftwidth=2
 set expandtab
 set smarttab
 
+au FileType javascript setlocal ts=4 sts=4 sw=4
+au FileType php setlocal ts=4 sts=4 sw=4
+au FileType python setlocal ts=4 sts=4 sw=4
+
 set nowrap
 set textwidth=0
 
