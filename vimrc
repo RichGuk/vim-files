@@ -186,5 +186,8 @@ Bundle "Puppet-Syntax-Highlighting"
 " Github Gists.
 Bundle "Gist.vim"
 
+" Matchit.
+Bundle "matchit.zip"
+
 " Needs to be at the end for Vundle.
 filetype plugin indent on
