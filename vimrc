@@ -186,6 +186,9 @@ Bundle "Puppet-Syntax-Highlighting"
 " Github Gists.
 Bundle "Gist.vim"
 
+" Slim templates.
+Bundle "bbommarito/vim-slim"
+
 " Matchit.
 Bundle "matchit.zip"
 
