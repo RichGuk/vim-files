@@ -192,5 +192,8 @@ Bundle "bbommarito/vim-slim"
 " Matchit.
 Bundle "matchit.zip"
 
+" Rails.vim
+Bundle "tpope/vim-rails"
+
 " Needs to be at the end for Vundle.
 filetype plugin indent on
