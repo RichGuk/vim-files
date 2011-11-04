@@ -41,6 +41,10 @@ set textwidth=0
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.class
 
+set foldmethod=syntax
+set foldnestmax=2
+set foldlevelstart=99
+
 syntax on
 filetype off
 
