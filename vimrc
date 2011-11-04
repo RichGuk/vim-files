@@ -195,5 +195,19 @@ Bundle "matchit.zip"
 " Rails.vim
 Bundle "tpope/vim-rails"
 
+" Ruby Debugger.
+Bundle "RichGuk/vim-ruby-debugger"
+let g:ruby_debugger_create_default_mappings = 0
+nmap <leader>db <plug>ruby_debugger_breakpoint
+nmap <leader>dv <plug>ruby_debugger_open_variables
+nmap <leader>dm <plug>ruby_debugger_open_breakpoints
+nmap <leader>dt <plug>ruby_debugger_open_frames
+nmap <leader>ds <plug>ruby_debugger_step
+nmap <leader>df <plug>ruby_debugger_finish
+nmap <leader>dn <plug>ruby_debugger_next
+nmap <leader>dc <plug>ruby_debugger_continue
+nmap <leader>de <plug>ruby_debugger_exit
+nmap <leader>dd <plug>ruby_debugger_remove_breakpoints
+
 " Needs to be at the end for Vundle.
 filetype plugin indent on
