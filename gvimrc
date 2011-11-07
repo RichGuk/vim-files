@@ -10,6 +10,9 @@ if has("gui_macvim")
   map <D-/> <plug>NERDCommenterToggle<CR>
 endif
 
+" Disable Balloon.
+set noballooneval
+
 " Start without the toolbar
 set guioptions-=T
 
