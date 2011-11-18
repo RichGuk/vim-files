@@ -200,6 +200,9 @@ Bundle "matchit.zip"
 " Rails.vim
 Bundle "tpope/vim-rails"
 
+" Less syntax highlighting.
+Bundle "groenewege/vim-less"
+
 " Ruby Debugger.
 Bundle "RichGuk/vim-ruby-debugger"
 let g:ruby_debugger_create_default_mappings = 0
