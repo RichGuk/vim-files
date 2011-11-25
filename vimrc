@@ -217,5 +217,11 @@ nmap <leader>dc <plug>ruby_debugger_continue
 nmap <leader>de <plug>ruby_debugger_exit
 nmap <leader>dd <plug>ruby_debugger_remove_breakpoints
 
+" Snipmate + Dependencies.
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+Bundle "garbas/vim-snipmate"
+
 " Needs to be at the end for Vundle.
 filetype plugin indent on
