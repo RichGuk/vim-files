@@ -197,6 +197,9 @@ Bundle "bbommarito/vim-slim"
 " Matchit.
 Bundle "matchit.zip"
 
+" Ruby.
+Bundle "vim-ruby/vim-ruby"
+
 " Rails.vim
 Bundle "tpope/vim-rails"
 
