@@ -143,7 +143,7 @@ call vundle#rc()
 
 " NERDTree.
 Bundle "The-NERD-tree"
-noremap <leader>n :NERDTreeToggle<CR>
+noremap <leader>n :NERDTreeToggle \| :silent NERDTreeMirror<CR>
 noremap <leader>N :NERDTreeFind<CR>
 
 " Nerd Commenter.
