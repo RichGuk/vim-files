@@ -142,6 +142,7 @@ call vundle#rc()
  Bundle "gmarik/vundle"
 
 " NERDTree.
+let g:NERDTreeWinSize = 40
 Bundle "The-NERD-tree"
 noremap <leader>n :NERDTreeToggle \| :silent NERDTreeMirror<CR>
 noremap <leader>N :NERDTreeFind<CR>
