@@ -163,7 +163,7 @@ Bundle "mru.vim"
 Bundle "delimitMate.vim"
 
 " Supertab.
-Bundle "SuperTab-continued."
+Bundle "ervandew/supertab"
 
 " Tagbar.
 Bundle "Tagbar"
